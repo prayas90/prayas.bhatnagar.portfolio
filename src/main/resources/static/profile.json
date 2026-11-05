@@ -1,35 +1,43 @@
 {
   "name": "Prayas Bhatnagar",
-  "title": "Java Solution Architect",
+  "title": "Java Backend Engineer",
   "location": "Bengaluru, India",
   "email": "prayas90@gmail.com",
   "experience": [
     {
       "company": "Synechron",
-      "role": "Specialist · Liquidity Risk Technology",
-      "period": "Apr 2026 – Present",
+      "role": "Specialist · Global Risk Data Analytics",
+      "period": "Jan 2026 – Present",
       "current": true,
-      "context": "Solution architecture for a Fortune 500 investment bank",
+      "context": "Model governance · Operational risk analytics · Engineering leadership",
       "highlights": [
-        "Promoted to Specialist, continuing to lead solution architecture for liquidity risk technology.",
-        "Extending AI-augmented tooling initiatives and scaling adoption across engineering teams."
+        "Built backend analytics for governance and controls across 30+ models, including model-performance metrics, risk calculations, and monitoring data for dashboards.",
+        "Maintained large-scale trade-data metrics for operational risk and integrated trend data and a curated knowledge base with an internal RAG-based AI agent.",
+        "Developed an ARIMA-based incident forecasting model to support proactive risk mitigation and reduce potential financial impact.",
+        "Engineered a Python data pipeline to ingest, cleanse, and transform diverse trade-data sources for operational risk metrics.",
+        "Lead the engineering team across technical decisions, solution design, delivery, mentoring, and people management; collaborate with stakeholders and product managers on requirements and priorities.",
+        "Support wider adoption of AI-assisted development workflows and internal engineering tools."
       ],
       "tags": [
-        "Solution architecture",
-        "Liquidity risk",
-        "AI tooling"
+        "Risk analytics",
+        "Model governance",
+        "RAG",
+        "ARIMA",
+        "Python",
+        "Team leadership"
       ]
     },
     {
       "company": "Synechron",
       "role": "Associate Specialist · Liquidity Risk Technology",
-      "period": "Mar 2023 – Mar 2026",
+      "period": "Mar 2023 – Dec 2025",
       "context": "Financial infrastructure · Daily regulatory reporting",
       "highlights": [
-        "Architected automation of Money Market Stress Test calculations to streamline liquidity risk reporting.",
-        "Built internal Python services with FastAPI and Flask, including a data quality validation layer for risk pipelines.",
-        "Integrated GitHub Copilot with custom internal prompts to support developer workflows.",
-        "Refactored legacy stored procedures, tables, and views, improving performance by 30%; owned API contracts and CI/CD strategy."
+        "Led automation of Money Market Stress Test calculations to streamline processing and reduce manual risk-reporting effort.",
+        "Owned solution design for stress testing, bucketing, and asset/volume calculations supporting daily regulatory reporting.",
+        "Created GitHub Copilot prompt workflows for internal development tasks; built FastAPI and Flask tools, including a data-quality validation layer for risk pipelines.",
+        "Defined API contracts and upstream/downstream data acquisition; supported Eaton Vance onboarding into liquidity reporting.",
+        "Optimized stored procedures, tables, and views to improve database processing by 30%; led CI/CD improvements and maintained architecture and support documentation."
       ],
       "tags": [
         "Java",
@@ -46,9 +54,10 @@
       "period": "Mar 2021 – Feb 2023",
       "context": "Legacy modernization · Stress testing & reporting",
       "highlights": [
-        "Led migration of a legacy liquidity risk system to Spring Boot, modernizing a business-critical platform.",
-        "Automated fund-level liquidity stress testing and implemented early data checks, reducing support involvement by 60%.",
-        "Directed architecture and technical design for daily reporting services, translating business requirements into system design."
+        "Led migration of a business-critical liquidity risk platform to Spring Boot.",
+        "Automated fund-level Liquidity Risk Stress Test calculations and production of business-ready reports.",
+        "Added early validation to report generation, reducing support-team involvement by 60%.",
+        "Directed architecture and technical design for daily reporting services; aligned the roadmap with regulatory and stakeholder priorities."
       ],
       "tags": [
         "Spring Boot",
@@ -62,9 +71,9 @@
       "period": "Nov 2019 – Mar 2021",
       "context": "ASV · Enterprise automation, OCR & workflow integration",
       "highlights": [
-        "Built an automation product using Google Tesseract OCR to streamline document processing.",
-        "Delivered a document-processing frontend, reducing support involvement by 65%.",
-        "Mentored junior developers and deployed proactive monitoring within a DevOps delivery model."
+        "Built document-processing capabilities using the open-source Tesseract OCR engine and algorithms to reduce manual intervention.",
+        "Delivered a document-processing user interface that reduced support involvement by 65%.",
+        "Introduced client-specific improvements and proactive monitoring; mentored engineers in implementation and design practices."
       ],
       "tags": [
         "OCR",
@@ -74,13 +83,14 @@
     },
     {
       "company": "Capgemini",
-      "role": "Consultant · ESB",
+      "role": "Consultant · Enterprise Service Bus (ESB)",
       "period": "Mar 2017 – Nov 2019",
       "earlier": true,
       "context": "BPOConnect / ESB · Enterprise application integration",
       "highlights": [
-        "Designed the database, integration layer, and reporting architecture.",
-        "Built inbound and outbound flows integrating SFTP, IMAP, and web services using WSO2 ESB."
+        "Designed the ESB database, integration layer, and reporting architecture serving 10 firm-wide end systems.",
+        "Developed 15+ WSO2 ESB integrations across SFTP, IMAP, and web services, covering inbound and outbound flows.",
+        "Converted requirements into solution designs and architecture documents; prepared delivery estimates and supported server and database provisioning."
       ],
       "tags": [
         "WSO2 ESB",
@@ -90,13 +100,14 @@
     },
     {
       "company": "Capgemini",
-      "role": "Consultant · IBM BPM",
+      "role": "Consultant · IBM Business Process Manager (BPM)",
       "period": "Feb 2014 – Mar 2017",
       "earlier": true,
       "context": "BPOpen 2.0 · Global Integrated Services platform",
       "highlights": [
-        "Implemented business process logic and system transitions using IBM BPM.",
-        "Led requirement-gathering sessions and UI playbacks; supported delivery teams and release testing."
+        "Implemented more than 35 business-process workflows and system transitions using IBM BPM.",
+        "Led weekly requirements workshops and UI mock-up reviews; coordinated developer allocation, training, and release testing.",
+        "Designed scalable process workflows supporting more than 20 enterprise clients."
       ],
       "tags": [
         "IBM BPM",
@@ -111,7 +122,9 @@
       "earlier": true,
       "context": "Web applications & content management",
       "highlights": [
-        "Built and maintained websites and deployed applications and databases to meet evolving business requirements."
+        "Developed, deployed, and maintained web applications and supporting databases based on client requirements.",
+        "Designed user interfaces and backend logic for more than 12 client web applications.",
+        "Applied version control and testing practices to support code quality and application stability."
       ],
       "tags": [
         "Web development",
@@ -123,72 +136,96 @@
     {
       "title": "Backend engineering",
       "items": [
-        "Java 8–21",
+        "Java 8–21 · Python",
         "Spring Boot · Spring MVC",
         "Spring Security · Spring Data JPA",
-        "Python · FastAPI · Flask"
+        "Hibernate · FastAPI · Flask"
       ]
     },
     {
       "title": "Architecture & integration",
       "items": [
-        "Solution architecture · System design",
-        "Microservices · RESTful APIs",
-        "Event-driven architecture",
-        "Design patterns · Legacy modernization"
+        "Solution architecture · Microservices",
+        "RESTful APIs · API contract design",
+        "Event-driven architecture · Design patterns",
+        "Legacy modernization · Enterprise integration"
       ]
     },
     {
       "title": "Data & messaging",
       "items": [
-        "SQL · MySQL · Hibernate",
-        "Redis · RabbitMQ",
-        "Stored procedures & data quality",
-        "Kafka — working knowledge"
+        "SQL · MySQL · Redis · RabbitMQ",
+        "Kafka — working knowledge",
+        "Data pipelines",
+        "Data quality & validation"
       ]
     },
     {
       "title": "Cloud & delivery",
       "items": [
-        "AWS",
+        "AWS — foundational experience",
         "Jenkins · GitHub Actions · TeamCity",
         "CI/CD · Shell scripting",
         "Prometheus · Grafana"
       ]
     },
     {
-      "title": "AI & developer tooling",
+      "title": "AI & data analytics",
       "items": [
-        "OpenAI GPT API",
-        "GitHub Copilot integration",
-        "Prompt engineering",
-        "AI-assisted test generation"
+        "RAG-based AI agents · LLM integration",
+        "OpenAI API · GitHub Copilot",
+        "Time-series forecasting · ARIMA",
+        "AI-assisted development"
       ]
     },
     {
-      "title": "Technical leadership",
+      "title": "Engineering leadership",
       "items": [
-        "Architecture ownership",
-        "API contracts & documentation",
-        "Mentoring & engineering practices",
-        "Agile delivery · Stakeholder collaboration"
+        "Team management · Mentoring",
+        "Technical roadmapping · Solution design",
+        "Stakeholder & product collaboration",
+        "Agile / Scrum"
+      ]
+    },
+    {
+      "title": "Financial services & risk",
+      "items": [
+        "Liquidity risk · Operational risk analytics",
+        "Model governance",
+        "Regulatory reporting",
+        "Trade-data analytics"
       ]
     }
   ],
   "certifications": [
     "AWS Certified Cloud Practitioner",
-    "Java Multithreading, Concurrency & Performance Optimization",
-    "Web Component Development using Java Technologies",
     "HackerRank Certified Software Engineer",
-    "HIPAA Associate (HIPAAA)",
-    "ITIL Foundation"
+    "Web Component Development using Java Technologies",
+    "Java Multithreading, Concurrency and Performance Optimization"
   ],
   "recentAiWork": {
     "topics": [
-      "Retrieval-augmented generation (RAG)",
-      "Snowflake LLMs",
-      "Copilot"
+      "RAG-based AI agents",
+      "LLM integration",
+      "ARIMA incident forecasting",
+      "GitHub Copilot"
     ],
-    "note": "Topics supplied by Prayas; specific projects, models and outcomes to be added when confirmed."
-  }
+    "note": "Internal RAG agent uses trend data and a curated knowledge base; ARIMA forecasting supports proactive operational risk mitigation. Snowflake LLM experience was also supplied separately by Prayas."
+  },
+  "yearsOfExperience": "13+",
+  "personalWebsite": "https://kaagaz-kalam.com/",
+  "recognition": [
+    {
+      "award": "Project Star",
+      "company": "Synechron"
+    },
+    {
+      "award": "Star of the Quarter",
+      "company": "Synechron"
+    },
+    {
+      "award": "Outstanding Contribution to Delivery Award",
+      "company": "Capgemini"
+    }
+  ]
 }

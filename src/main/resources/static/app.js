@@ -46,6 +46,7 @@ async function loadProfile() {
     return group;
   }));
   document.querySelector('#certifications').replaceChildren(...profile.certifications.map(item => element('li', '', item)));
+  document.querySelector('#recognition').replaceChildren(...profile.recognition.map(item => element('li', '', `${item.award} · ${item.company}`)));
 }
 
 loadProfile().catch(() => {

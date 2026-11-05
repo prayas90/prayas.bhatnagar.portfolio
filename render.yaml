@@ -1,0 +1,11 @@
+# Import this repository as a Render Blueprint to create the service.
+services:
+  - type: web
+    name: prayas-bhatnagar
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit

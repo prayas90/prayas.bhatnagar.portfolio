@@ -38,7 +38,7 @@ scripts/build-static.mjs        Copies frontend assets for static deployment
 
 Edit `profile.json` for experience, skills, and certifications. Edit `index.html` for the introduction, recent AI section, and links. The JSON name/contact metadata is for the API; those fields do not automatically replace the HTML introduction/contact. Replace `resume.pdf` when your resume changes. Re-run/restart the backend to copy changed classpath resources, or use a static preview during frontend editing.
 
-The 11+ years wording and performance figures are retained from the supplied resume. Recent RAG/Snowflake work is described only at topic level because project details and outcomes have not yet been supplied. The original resume includes phone/contact information and is downloadable. Review that document before making a public deployment.
+Website content is based on the latest supplied resume, Prayas_2026.pdf: 13+ years, Global Risk Data Analytics from January 2026, updated skills, certifications, and recognition. The previously removed 70%, 35%, and 50% figures remain absent from the page. The downloadable PDF is the original latest resume. Additional Snowflake LLM experience was supplied separately by Prayas.
 
 ## Backend endpoints
 
@@ -59,12 +59,14 @@ The frontend loads `profile.json` directly, so it also works on static hosting w
 
 ## Hosting
 
+**Render:** See [DEPLOY-RENDER.md](DEPLOY-RENDER.md). The included `Dockerfile`, `.dockerignore`, and `render.yaml` deploy the frontend and Spring Boot backend together, with automatic deployment on commits to your selected GitHub branch.
+
 Two modes use the same frontend source:
 
 1. **Java hosting:** run the packaged JAR. This runs the backend and website together.
 2. **Static hosting:** run `node scripts/build-static.mjs` and publish `dist/`. This publishes the resume website only; Java endpoints are not available on static hosting.
 
-The Sites manifest uses the static mode. Sites' Worker runtime does not run the Spring Boot JVM. This keeps the first website lightweight while preserving the complete backend locally for learning and later Java deployment. The interface uses system fonts without external font requests. No analytics or cookies are added.
+The Sites manifest uses the static mode. Sites' Worker runtime does not run the Spring Boot JVM. This keeps the first website lightweight while preserving the complete backend locally for learning and later Java deployment. The interface uses optional Google Fonts with system-font fallbacks. No analytics or cookies are added.
 
 Your requested GitHub repository is https://github.com/prayas90/prayas.bhatnagar. Keep it as your project repository; Sites source synchronization uses its own deployment remote. To use this folder with GitHub, add the GitHub URL as a second remote rather than overwriting the Sites remote, or copy the source into a checkout of your GitHub repository (exclude `.git`, `target`, `dist`, and `.openai` when making an independent copy).
 

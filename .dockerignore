@@ -1,0 +1,15 @@
+.git
+.openai
+.vscode
+.idea
+target
+dist
+node_modules
+.sites-*
+.env
+.env.*
+*.log
+*.zip
+*.tar.gz
+README.md
+DEPLOY-RENDER.md
