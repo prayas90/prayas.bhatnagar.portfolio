@@ -4,7 +4,7 @@ This deploys both the resume website and Java API as one Docker web service. No 
 
 ## 1. Put the source in your GitHub repository
 
-Repository: https://github.com/prayas90/prayas.bhatnagar
+Repository: https://github.com/prayas90/prayas.bhatnagar.portfolio
 
 Use the provided source ZIP, which contains no Git history or Sites identity. Clone your GitHub repository in VS Code, copy the contents of the ZIP's `prayas.bhatnagar` folder into the repository root, then commit and push through VS Code Source Control.
 
