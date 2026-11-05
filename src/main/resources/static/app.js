@@ -11,7 +11,7 @@ function experienceRow(job) {
   const row = element('article', 'experience-row');
   const meta = element('div', 'experience-meta');
   meta.append(element('p', 'company', job.company), element('p', 'date', job.period));
-  if (job.current) meta.append(element('span', 'current', '● CURRENT'));
+  if (job.current) meta.append(element('span', 'current', 'Current'));
   const content = element('div', 'experience-content');
   content.append(element('h3', '', job.role), element('p', 'context', job.context));
   const list = element('ul', 'bullets');
