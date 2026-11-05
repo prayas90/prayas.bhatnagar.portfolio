@@ -1,0 +1,1 @@
+{"version":"0.2.0","configurations":[{"type":"java","name":"Run portfolio backend","request":"launch","mainClass":"com.prayas.portfolio.PortfolioApplication","projectName":"portfolio"}]}
