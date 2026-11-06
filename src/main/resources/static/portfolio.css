@@ -1,6 +1,36 @@
 .hero-copy {
-  grid-column: 1 / -1;
-  max-width: 760px;
+  max-width: 650px;
+}
+
+.hero-build {
+  justify-self: end;
+  width: min(100%, 300px);
+  border-left: 1px solid var(--line);
+  padding: 8px 0 8px 24px;
+}
+
+.hero-build .eyebrow {
+  color: var(--muted);
+}
+
+.hero-build ul {
+  display: grid;
+  gap: 16px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-build li span {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.8px;
+}
+
+.hero-build li p {
+  margin-top: 2px;
+  font-size: 12px;
 }
 
 .project-list {
@@ -73,6 +103,12 @@
 }
 
 @media (max-width: 640px) {
+  .hero-build {
+    justify-self: start;
+    margin-top: 30px;
+    padding-left: 18px;
+  }
+
   .project-card {
     grid-template-columns: 1fr;
     gap: 22px;
