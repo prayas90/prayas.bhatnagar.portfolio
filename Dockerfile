@@ -1,5 +1,5 @@
 # Build the website and Java API into one runnable Spring Boot JAR.
-FROM maven:3.9-eclipse-temurin-21 AS build
+FROM maven:3.9-eclipse-temurin-25 AS build
 WORKDIR /workspace
 COPY pom.xml ./
 RUN mvn --batch-mode --no-transfer-progress dependency:go-offline
@@ -7,7 +7,7 @@ COPY src ./src
 RUN mvn --batch-mode --no-transfer-progress clean package
 
 # Only the Java runtime and packaged application are shipped to production.
-FROM eclipse-temurin:21-jre-jammy AS runtime
+FROM eclipse-temurin:25-jre-jammy AS runtime
 WORKDIR /app
 COPY --from=build --chown=10001:10001 /workspace/target/portfolio-1.0.0.jar /app/portfolio.jar
 USER 10001:10001

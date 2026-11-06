@@ -1,10 +1,10 @@
 # Prayas Bhatnagar — personal website
 
-A single-page resume website with a Java 21 / Spring Boot backend and a plain HTML, CSS and JavaScript frontend. All source is editable in VS Code. No API keys, AI services, database, or frontend package installation are required. The chatbot is intentionally deferred.
+A single-page resume website with a Java 25 / Spring Boot backend and a plain HTML, CSS and JavaScript frontend. All source is editable in VS Code. No API keys, AI services, database, or frontend package installation are required. The chatbot is intentionally deferred.
 
 ## Run in VS Code
 
-Open this folder (the folder containing `pom.xml`) in VS Code. Install Java 21 and Maven 3.6.3 or newer, then run:
+Open this folder (the folder containing `pom.xml`) in VS Code. Install Java 25 and Maven 3.6.3 or newer, then run:
 
 ```sh
 mvn spring-boot:run
@@ -69,4 +69,3 @@ Two modes use the same frontend source:
 The Sites manifest uses the static mode. Sites' Worker runtime does not run the Spring Boot JVM. This keeps the first website lightweight while preserving the complete backend locally for learning and later Java deployment. The interface uses optional Google Fonts with system-font fallbacks. No analytics or cookies are added.
 
 Your requested GitHub repository is https://github.com/prayas90/prayas.bhatnagar. Keep it as your project repository; Sites source synchronization uses its own deployment remote. To use this folder with GitHub, add the GitHub URL as a second remote rather than overwriting the Sites remote, or copy the source into a checkout of your GitHub repository (exclude `.git`, `target`, `dist`, and `.openai` when making an independent copy).
-

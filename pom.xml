@@ -5,7 +5,7 @@
   <groupId>com.prayas</groupId><artifactId>portfolio</artifactId><version>1.0.0</version>
   <name>Prayas Bhatnagar Portfolio</name>
   <description>Personal resume website with an editable Spring Boot backend</description>
-  <properties><java.version>21</java.version></properties>
+  <properties><java.version>25</java.version></properties>
   <dependencies><dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-webmvc</artifactId></dependency></dependencies>
   <build><plugins><plugin><groupId>org.springframework.boot</groupId><artifactId>spring-boot-maven-plugin</artifactId></plugin></plugins></build>
 </project>
