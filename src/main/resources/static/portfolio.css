@@ -2,35 +2,108 @@
   max-width: 650px;
 }
 
-.hero-build {
+.build-card {
   justify-self: end;
-  width: min(100%, 300px);
-  border-left: 1px solid var(--line);
-  padding: 8px 0 8px 24px;
+  width: min(100%, 370px);
+  padding: 25px 26px 22px;
+  border: 1px solid #e2ded5;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #f4f2ed, #f8f7f3 72%);
 }
 
-.hero-build .eyebrow {
-  color: var(--muted);
-}
-
-.hero-build ul {
-  display: grid;
+.build-card-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 16px;
-  margin: 20px 0 0;
+}
+
+.build-card-heading .eyebrow {
+  color: #777168;
+}
+
+.build-card-heading h2 {
+  margin-top: 12px;
+  font-size: 22px;
+  font-weight: 550;
+  letter-spacing: -0.8px;
+  line-height: 1.25;
+}
+
+.build-card-index {
+  padding-top: 2px;
+  color: #958b7a;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.6px;
+}
+
+.build-flow {
+  display: grid;
+  margin: 22px 0 18px;
   padding: 0;
   list-style: none;
 }
 
-.hero-build li span {
-  color: var(--muted);
+.build-flow li {
+  display: grid;
+  grid-template-columns: 27px 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 0;
+  border-top: 1px solid #e5e1d9;
+}
+
+.build-step-number {
+  display: grid;
+  width: 25px;
+  height: 25px;
+  place-items: center;
+  border: 1px solid #ded9ce;
+  border-radius: 50%;
+  color: #777168;
+  font-family: var(--mono);
+  font-size: 8px;
+}
+
+.build-flow li div {
+  display: grid;
+  gap: 2px;
+}
+
+.build-step-label,
+.build-tools > span {
+  color: #898378;
   font-family: var(--mono);
   font-size: 8px;
   letter-spacing: 0.8px;
 }
 
-.hero-build li p {
-  margin-top: 2px;
+.build-flow strong {
   font-size: 12px;
+  font-weight: 550;
+}
+
+.build-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid #e1ddd5;
+  padding-top: 15px;
+}
+
+.build-tools > div {
+  display: flex;
+  gap: 6px;
+}
+
+.build-tools > div span {
+  padding: 3px 7px;
+  border: 1px solid #e1ddd5;
+  border-radius: 3px;
+  color: #71695a;
+  font-size: 9px;
 }
 
 .project-list {
@@ -103,10 +176,12 @@
 }
 
 @media (max-width: 640px) {
-  .hero-build {
+  .build-card {
     justify-self: start;
     margin-top: 30px;
-    padding-left: 18px;
+    width: 100%;
+    max-width: 420px;
+    padding: 22px;
   }
 
   .project-card {
